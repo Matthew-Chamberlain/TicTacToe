@@ -1,0 +1,148 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #314463;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 500px;
+}
+
+dialog
+{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form > button
+{
+    width: 100%;
+}
+
+input
+{
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+#header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: white;
+    font-weight: bolder;
+    font-size: 6vw
+}
+
+#content
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 15px;
+    flex: 5;
+    margin: auto;
+    align-items: center;
+}
+
+#scoreContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+p{
+    margin: 0 0 1rem 0;
+}
+
+#board
+{
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 15px;
+    border: 10px solid #e6c387;
+    height: 60%;
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+.boardCell:hover
+{
+    background-color: #26344d;
+    
+}
+
+.boardCell
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #e6c387;
+    border-radius: 10px;
+    color: #e6c387;
+    font-size: 7vw;
+    text-align: center;
+    font-weight: bold;
+    height: 100%;
+}
+
+#topLeft, #topCentre, #topRight
+{
+    border-top: none;
+}
+
+#topLeft, #centreLeft, #bottomLeft
+{
+    border-left: none;
+}
+
+#topRight, #centreRight, #bottomRight
+{
+    border-right: none;
+}
+
+#bottomLeft, #bottomCentre, #bottomRight
+{
+    border-bottom: none;
+}
+
+#restartButton
+{
+    width: 41%;
+    padding: 1rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #e6c387;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#restartButton:hover
+{
+    background-color: #d3b37d;
+}
+
+#restartButton:active
+{
+    background-color: #c0a472;
+    transform: translateY(5px);
+}

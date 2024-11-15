@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body onload="getPlayerNames()">
+    <dialog id="playerNamesDialog">
+        <form id="playerNameForm" onsubmit="return false">
+            <label for="player1Name">Enter Name for Player 1</label>
+            <input id="player1Name" type="text" required name="player1Name" placeholder="John">
+            <label for="player2Name">Enter Name for Player 2</label>
+            <input id="player2Name" type="text" required name="player2Name" placeholder="Matt">
+            <button type="submit">Submit</button>
+        </form>
+    </dialog>
+    <div id="header">TIC TAC TOE</div>
+    <div id="content">
+        <div id="scoreContainer">
+            <p></p>
+            <p></p>
+            <P></P>
+            <p></p>
+        </div>
+        <div id="board">
+            <div class="boardCell" id="topLeft" onclick="game.turn(this)"></div>
+            <div class="boardCell" id="topCentre" onclick="game.turn(this)"></div>
+            <div class="boardCell" id="topRight" onclick="game.turn(this)"></div>
+            <div class="boardCell" id="centreLeft" onclick="game.turn(this)"></div>
+            <div class="boardCell" id="centre" onclick="game.turn(this)"></div>
+            <div class="boardCell" id="centreRight" onclick="game.turn(this)"></div>
+            <div class="boardCell" id="bottomLeft" onclick="game.turn(this)"></div>
+            <div class="boardCell" id="bottomCentre" onclick="game.turn(this)"></div>
+            <div class="boardCell" id="bottomRight" onclick="game.turn(this)"></div>
+        </div>
+        <button id="restartButton" onclick="game.restartGame()">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
